@@ -19,7 +19,7 @@ import com.mohs10.or.HomePage;
 		}
 		
 		// Registration process
-				public void Register(String Firstname, String Lastname, String Email, String Pwd, String ConfirmPwd) throws Exception
+			/*	public void Register(String Firstname, String Lastname, String Email, String Pwd, String ConfirmPwd) throws Exception
 				{
 					StartBrowser.childTest = StartBrowser.parentTest.createNode("Register in DemoWeb shop");
 					aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
@@ -32,71 +32,33 @@ import com.mohs10.or.HomePage;
 					aDriver.type(HomePage.txtConfirmpassword, ConfirmPwd, "confirm password text box");
 					aDriver.click(HomePage.btnRegister, "Register button");
 					aDriver.click(HomePage.btnContinue, "Continue button");
-				}
+				} */
 				
-			//Login process
-				public void logIn(String email, String pwd) throws Exception
-				{
-					StartBrowser.childTest = StartBrowser.parentTest.createNode("Login to DemoWeb shop");
-					aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-					aDriver.click(HomePage.lnkLogin, "Login link");
-					aDriver.type(HomePage.txtemail, email, "email text box");
-					aDriver.type(HomePage.txtpwd, pwd, "password text box");
-					aDriver.click(HomePage.btnlogin, "Login button");
-					aDriver.click(HomePage.lnkLogout, "Logout link");
-				}
-				//invalid login process
-				public void invalidLogIn(String email, String pwd) throws Exception
-				{
-					StartBrowser.childTest = StartBrowser.parentTest.createNode("Login to DemoWeb shop with invalid credentials");
-					aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-					aDriver.click(HomePage.lnkLogin, "Login link");
-					aDriver.type(HomePage.txtemail, email, "email text box");
-					aDriver.type(HomePage.txtpwd, pwd, "password text box");
-					aDriver.click(HomePage.btnlogin, "Login button");
-				}	
-		
-		
-		//News button
-		  public void Pagedown() throws Exception
-		  
-		  { 
-		  StartBrowser.childTest =StartBrowser.parentTest.createNode("Page down");
-		  aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-		  Actions a=new Actions(driver);
-		  a.sendKeys(Keys.PAGE_DOWN).perform();
-		  a.sendKeys(Keys.PAGE_DOWN).perform();
-		  }
-		 
-		  public void Newsbtn() throws Exception
-		  {
-			StartBrowser.childTest = StartBrowser.parentTest.createNode("News button");
-			aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-			aDriver.click(HomePage.btnNews, "Performed click operation on News button");
-		  }
-		  
-		  //Blog Link
-		  public void Blogbtn() throws Exception
-			{
-				StartBrowser.childTest = StartBrowser.parentTest.createNode("Blog buttton");
-				aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-				aDriver.click(HomePage.btnBlog, "Performed click operation on Blog button");
-			}
-			
+
+
 		  //Categories
 		  public void Categories() throws Exception 
 		  {
 			  	StartBrowser.childTest = StartBrowser.parentTest.createNode("Category links");
 				aDriver.navigateToApplication("http://demowebshop.tricentis.com/");
-				aDriver.click(HomePage.lnkBooks, "Performed click operation on books link");
-				aDriver.click(HomePage.lnkComputer,"Performed click operation on Computer Link");
-				aDriver.click(HomePage.lnkElectronics,"Performed click operation on Electronics Link");
-				aDriver.click(HomePage.lnkApparelandShoes,"Performed click operation on Apparel and Shoes Link");
-				aDriver.click(HomePage.lnkDigitaldownloads,"Performed click operation on Digital Downloads Link");
-				aDriver.click(HomePage.lnkJewelry,"Performed click operation on Jewelry Link");
-				aDriver.click(HomePage.lnkGiftCards,"Performed click operation on Gift Cards Link");
-			
-			  
+				/*aDriver.click(HomePage.Jewelry, "Performed click operation on jewelry link");
+				aDriver.click(HomePage.chooseJewelry, "Performed click operation on jewelry link");
+				aDriver.type(HomePage.addlength, "10", "length is added");
+				aDriver.click(HomePage.addtocartJewelry, "Performed click operation on jewelry link");*/
+				
+				aDriver.click(HomePage.books, "performed click operation");
+				aDriver.click(HomePage.book, "click on book");
+				aDriver.click(HomePage.addtocart, "click on book");
+				aDriver.click(HomePage.compareproduct, "click on book");
+				aDriver.click(HomePage.computers, "click on book");
+				aDriver.click(HomePage.computer, "click on book");
+				//aDriver.click(HomePage.click, "click on book");
+				aDriver.click(HomePage.addtocart2, "click on computer");
+				aDriver.click(HomePage.clickoncart, "click on computer");
+				aDriver.click(HomePage.compare, "click on computer");
+				aDriver.click(HomePage.remove, "click on remove");
+				
+				
 		  }
 	}
-
+			
